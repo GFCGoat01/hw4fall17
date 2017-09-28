@@ -1,0 +1,11 @@
+%h1 Sign-up
+
+= form_tag new_user_path do
+
+  = label :movie, :title, 'Title'
+  = text_field :movie, 'title'
+
+  = label :users, :userID, 'User-ID'
+  = label :users, :userEmail, 'E-Mail'
+  
+  = submit_tag 'Create my account'
