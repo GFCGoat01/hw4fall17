@@ -3,9 +3,9 @@
 = form_tag new_user_path do
 
   = label :users, :user_id, 'User-ID'
-  = text_field :user_id, 'User-ID'
+  = text_field :user_id, 'User-ID', id => 'signupUser'
 
   = label :users, :email, 'E-Mail'
-  = text_field :email, 'E-Mail'
+  = text_field :email, 'E-Mail', id => 'signupEmail'
 
-  = submit_tag 'Save Changes'
+  = submit_tag 'Create my account', id => 'signupCreate'
