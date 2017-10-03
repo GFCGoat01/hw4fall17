@@ -2,13 +2,10 @@
 
 = form_tag movies_path do
 
-  = label :movie, :title, 'Title'
-  = text_field :movie, 'title'
+  = label :users, :title, 'User-ID'
+  = text_field :users, 'User-ID'
 
-  = label :movie, :rating, 'Rating'
-  = select :movie, :rating, ['G','PG','PG-13','R','NC-17']
+  = label :users, :email, 'E-Mail'
+  = text_field :email, 'E-Mail'
 
-  = label :movie, :release_date, 'Released On'
-  = date_select :movie, :release_date
-
-  = submit_tag 'Save Changes'
+  = submit_tag 'Create my account'
